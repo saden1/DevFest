@@ -5,15 +5,15 @@
   </widgets>
   <widgets xsi:type="model:WidgetGroup" id="4" x="37" y="135" measuredWidth="360" measuredHeight="46" name="Action Bar">
     <widgets xsi:type="model:Panel" id="5" width="360" height="46" measuredWidth="360" measuredHeight="46" background="#cccccc" border="none"/>
-    <widgets xsi:type="model:WidgetGroup" id="6" x="3" y="11" measuredWidth="9" measuredHeight="24" name="Up">
+    <widgets xsi:type="model:WidgetGroup" id="6" x="3" y="11" measuredWidth="9" measuredHeight="24" link="../HomeListView.screen" name="Up">
       <widgets xsi:type="model:SVGImage" id="7" measuredWidth="9" measuredHeight="24" src="android/_nav_up.svg"/>
     </widgets>
     <widgets xsi:type="model:Icon" id="8" x="14" y="7" measuredWidth="32" measuredHeight="32" icon="unchecked (large)"/>
-    <widgets xsi:type="model:Label" id="9" x="48" y="9" text="Places" measuredWidth="63" measuredHeight="31">
+    <widgets xsi:type="model:Label" id="9" x="48" y="9" text="Place" measuredWidth="53" measuredHeight="31">
       <font size="19px"/>
     </widgets>
     <widgets xsi:type="model:WidgetGroup" id="11" x="320" y="11" measuredWidth="24" measuredHeight="24" name="Overflow">
-      <widgets xsi:type="model:SVGImage" id="12" measuredWidth="24" measuredHeight="24" src="android/_overflow.svg"/>
+      <widgets xsi:type="model:SVGImage" id="12" measuredWidth="24" measuredHeight="24" link="../place/actions/PlaceAction.screen" src="android/_overflow.svg"/>
     </widgets>
   </widgets>
   <hRuler/>

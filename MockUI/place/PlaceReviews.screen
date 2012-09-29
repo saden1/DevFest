@@ -3,10 +3,13 @@
   <widgets xsi:type="model:Master" id="3" measuredWidth="430" measuredHeight="844">
     <screen xsi:type="model:Screen" href="../assets/BaseSubTemplate.screen#/"/>
   </widgets>
-  <widgets xsi:type="model:Accordion" id="4" x="37" y="180" width="360" height="526" text="Details&#xA;Reviews&#xA;Events" measuredWidth="360" measuredHeight="526" selection="1">
-    <items x="0" y="2" width="360" height="25" text="Details"/>
-    <items x="0" y="27" width="360" height="25" text="Reviews"/>
-    <items x="0" y="501" width="360" height="25" text="Events"/>
+  <widgets xsi:type="model:Master" id="5" x="37" y="180" measuredWidth="360" measuredHeight="526">
+    <screen xsi:type="model:Screen" href="../assets/PlaceListing.screen#/"/>
+    <overrides>
+      <widgets ref="1">
+        <attributes key="selection" value="1"/>
+      </widgets>
+    </overrides>
   </widgets>
   <hRuler/>
   <vRuler/>

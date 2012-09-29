@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model:Screen xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:Screen" href="../../assets/BaseSubTemplate.screen#/"/>
+    <overrides>
+      <widgets ref="9" text="Event"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="236" y="180" measuredWidth="161" measuredHeight="102">
+    <screen xsi:type="model:WidgetGroup" href="../../assets/android/Android4.screen#Menu%20with%20Icons"/>
+    <overrides>
+      <widgets ref="531" text="{thumbs-up} Bumb Event&#xA;{delete} Delete Event">
+        <items ref="@items.1" text="{thumbs-up} Bumb Event"/>
+        <items ref="@items.2" text="{delete} Delete Event"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.3"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
+    </overrides>
+  </widgets>
   <hRuler/>
   <vRuler/>
   <font size="12px"/>

@@ -2,11 +2,18 @@
 <model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
   <widgets xsi:type="model:Master" id="3" measuredWidth="430" measuredHeight="844">
     <screen xsi:type="model:Screen" href="../assets/BaseSubTemplate.screen#/"/>
+    <overrides>
+      <widgets ref="11" link="actions/PlaceAction.screen"/>
+    </overrides>
   </widgets>
-  <widgets xsi:type="model:Accordion" id="4" x="37" y="180" width="360" height="526" text="Details&#xA;Reviews&#xA;Events" measuredWidth="360" measuredHeight="526" selection="0">
-    <items x="0" y="2" width="360" height="25" text="Details"/>
-    <items x="0" y="476" width="360" height="25" text="Reviews"/>
-    <items x="0" y="501" width="360" height="25" text="Events"/>
+  <widgets xsi:type="model:Hotspot" id="6" x="38" y="680" width="359" height="26" measuredWidth="359" measuredHeight="26" link="PlaceEvents.screen"/>
+  <widgets xsi:type="model:Master" id="7" x="37" y="180" measuredWidth="360" measuredHeight="526">
+    <screen xsi:type="model:Screen" href="../assets/PlaceListing.screen#/"/>
+    <overrides>
+      <widgets ref="1">
+        <attributes key="selection" value="0"/>
+      </widgets>
+    </overrides>
   </widgets>
   <hRuler/>
   <vRuler/>

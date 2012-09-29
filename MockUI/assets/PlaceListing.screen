@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Accordion" id="1" width="360" height="526" text="Details&#xA;Reviews&#xA;Events" measuredWidth="360" measuredHeight="526" selection="">
+    <items link="../place/PlaceDetails.screen" x="0" y="2" width="360" height="25" text="Details"/>
+    <items link="../place/PlaceReviews.screen" x="0" y="27" width="360" height="25" text="Reviews"/>
+    <items link="../place/PlaceEvents.screen" x="0" y="52" width="360" height="25" text="Events"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
