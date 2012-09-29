@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
   <widgets xsi:type="model:Master" id="1" measuredWidth="430" measuredHeight="844">
     <screen xsi:type="model:Screen" href="../assets/BaseSubTemplate.screen#/"/>
     <overrides>
       <widgets ref="9" text="Event"/>
+      <widgets ref="11" link="actions/EventAction.screen"/>
+      <widgets ref="6" link="PlaceEvents.screen"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="3" x="38" y="180" measuredWidth="360" measuredHeight="103">
+    <screen xsi:type="model:WidgetGroup" href="../assets/android/Android4.screen#List%202%20Lines"/>
+    <overrides>
+      <widgets ref="466" text="Event Name"/>
+      <widgets ref="467" text="Start Time: 8:30 pm\nDuration: 2 hours\nDetail Summary of the event">
+        <items ref="@items.2" text="Start Time: 8:30 pm\nDuration: 2 hours\nDetail Summary of the event"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.1"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
     </overrides>
   </widgets>
   <hRuler/>

@@ -3,7 +3,7 @@
   <widgets xsi:type="model:Master" id="3" measuredWidth="430" measuredHeight="844">
     <screen xsi:type="model:Screen" href="../assets/BaseSubTemplate.screen#/"/>
     <overrides>
-      <widgets ref="11" link="actions/EventAction.screen"/>
+      <widgets ref="11" link="actions/PlaceAction.screen"/>
     </overrides>
   </widgets>
   <widgets xsi:type="model:Master" id="7" x="37" y="180" measuredWidth="360" measuredHeight="526">
@@ -20,7 +20,7 @@
       <widgets ref="470" x="2" width="61" text="2 Events"/>
       <widgets ref="471" width="353" text="Event 1 Start Time - End Time\n%(font:15)Event 1 Summary%&#xA;Event 2 Start Time - End Time\n%(font:15)Event 1 Summary%">
         <attributes key="selection" value="0"/>
-        <items ref="@items.1" text="Event 1 Start Time - End Time\n%(font:15)Event 1 Summary%" link="actions/EventAction.screen"/>
+        <items ref="@items.1" text="Event 1 Start Time - End Time\n%(font:15)Event 1 Summary%" link="EventDetails.screen"/>
         <items ref="@items.2" text="Event 2 Start Time - End Time\n%(font:15)Event 1 Summary%"/>
         <itemChanges xsi:type="o:Delete" ref="@items.0"/>
       </widgets>
