@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="3" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:Screen" href="../assets/BaseSubTemplate.screen#/"/>
+  </widgets>
+  <widgets xsi:type="model:Accordion" id="4" x="37" y="180" width="360" height="526" text="Details&#xA;Reviews&#xA;Events" measuredWidth="360" measuredHeight="526" selection="0">
+    <items x="0" y="2" width="360" height="25" text="Details"/>
+    <items x="0" y="476" width="360" height="25" text="Reviews"/>
+    <items x="0" y="501" width="360" height="25" text="Events"/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

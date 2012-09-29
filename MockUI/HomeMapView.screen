@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Master" id="45" measuredWidth="430" measuredHeight="844">
+    <screen xsi:type="model:Screen" href="assets/BaseTemplate.screen#/"/>
+  </widgets>
+  <widgets xsi:type="model:Map" id="47" x="39" y="214" width="357" height="445" measuredWidth="357" measuredHeight="445"/>
+  <widgets xsi:type="model:Icon" id="48" x="240" y="410" measuredWidth="24" measuredHeight="24" icon="direction (medium)"/>
+  <widgets xsi:type="model:Label" id="49" x="172" y="542" text="Place 1" measuredWidth="46" measuredHeight="50" textAlignment="Center" icon="location (medium)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="50" x="335" y="512" text="Place 2" measuredWidth="46" measuredHeight="50" textAlignment="Center" icon="location (medium)" iconPosition="top">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="51" x="341" y="312" text="Place 3" measuredWidth="46" measuredHeight="50" textAlignment="Center" icon="location (medium)" iconPosition="top">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>
