@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/placeaction" android:title="@string/Action" android:enabled="true" android:visible="true">
+        <menu>
+            <item android:id="@+id/bumpplace" android:title="@string/BumpPlace" android:enabled="true" android:visible="true"/>
+            <item android:id="@+id/addevent" android:title="@string/AddEvent" android:enabled="true" android:visible="true"/>
+        </menu>
+    </item>
+    
+</menu>
