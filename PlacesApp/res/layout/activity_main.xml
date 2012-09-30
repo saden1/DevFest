@@ -11,10 +11,15 @@
         android:text="@string/hello_world"
         tools:context=".MainActivity" />
 	<com.devsmart.android.ui.HorizontalListView
-	  	android:id="@+id/listview"
+	  	android:id="@+id/place_type_list"
 	  	android:layout_width="fill_parent"
 	  	android:layout_height="wrap_content"
 	  	android:background="#ddd"
-	  />
-    
+	/>
+    <ListView
+        android:id="@+id/places_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+    />
 </RelativeLayout>

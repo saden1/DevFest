@@ -8,7 +8,7 @@ public class PlaceType {
 	}
 	
 	public Object getItem(int position) {
-		return null;
+		return GPlaceType.values()[position];
 	}
 	
 	public long getItemId(int position) {
@@ -16,6 +16,6 @@ public class PlaceType {
 	}
 	
 	public String getText(int position) {
-		return GPlaceType.values()[position].toString();
+		return getItem(position).toString();
 	}
 }

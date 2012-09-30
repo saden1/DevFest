@@ -7,9 +7,12 @@ import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 
 import com.ballardview.devfest.places.adapter.HorizontalListViewAdapter;
+import com.ballardview.devfest.places.adapter.PlacesListAdapter;
 import com.ballardview.devfest.places.model.PlaceType;
+import com.ballardview.devfest.places.service.enums.GPlaceType;
 import com.devsmart.android.ui.HorizontalListView;
 
 public class MainActivity extends Activity {
@@ -19,10 +22,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 		
-		HorizontalListView listview = (HorizontalListView) findViewById(R.id.listview);
+		HorizontalListView listview = (HorizontalListView) findViewById(R.id.place_type_list);
 		listview.setGesture(new GestureDetector(this, listview.getGestureListener()));
-		listview.setAdapter(mAdapter);	
-
+		listview.setAdapter(mAdapter);
+		Object current = listview.getSelectedItem();
+		if (null == current) {
+			listview.setSelection(0);
+			current = listview.getSelectedItem();
+		}
+		ListView places = (ListView) findViewById(R.id.places_list);
+		places.setAdapter(new PlacesListAdapter((GPlaceType) current, R.layout.place_summary));
     }
 
 	private BaseAdapter mAdapter = new HorizontalListViewAdapter(this, new PlaceType(), R.layout.place_type_item);
