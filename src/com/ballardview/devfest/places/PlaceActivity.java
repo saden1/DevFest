@@ -28,6 +28,9 @@ public class PlaceActivity extends Activity {
 			Toast.makeText(this, "Place Bumped!", Toast.LENGTH_LONG).show();
 		case R.id.addevent:
 			Toast.makeText(this, "Add Event!", Toast.LENGTH_LONG).show();
+		case R.id.viewevent:
+			Intent intent = new Intent(this, EventActivity.class);
+    		startActivity(intent);
 		}
 		return super.onMenuItemSelected(featureId, item);
 	}

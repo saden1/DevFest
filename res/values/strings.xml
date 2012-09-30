@@ -1,19 +1,20 @@
 <resources>
 
-    <string name="app_name">John made this</string>
+    <string name="app_name">JSJ Places</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_main">Places</string>
+    <string name="title_activity_event">Event</string>
     <string name="Event">Event</string>
     <string name="BumpEvent">Bump Event</string>
     <string name="DeleteEvent">Delete Event</string>
     <string name="LongTestString">Even Longer Test Strings, YES!</string>
-    <string name="title_activity_place">PlaceActivity</string>
+    <string name="title_activity_place">Place</string>
     <string name="Action">Action</string>
     <string name="BumpPlace">Bump Place</string>
     <string name="AddEvent">Add Event</string>
     <string name="ViewPlace">View Place</string>
-    <string name="title_activity_add_event">AddEventActivity</string>
+    <string name="title_activity_add_event">Add Event</string>
+    <string name="ViewEvent">View Event</string>
 
 </resources>

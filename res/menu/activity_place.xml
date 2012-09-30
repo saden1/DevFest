@@ -3,10 +3,11 @@
         android:title="@string/menu_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
-    <item android:id="@+id/placeaction" android:title="@string/Action" android:enabled="true" android:visible="true">
+    <item android:id="@+id/placeaction" android:title="@string/Action" android:orderInCategory="101" android:showAsAction="ifRoom|collapseActionView" android:visible="true" android:enabled="true">
         <menu>
             <item android:id="@+id/bumpplace" android:title="@string/BumpPlace" android:enabled="true" android:visible="true"/>
             <item android:id="@+id/addevent" android:title="@string/AddEvent" android:enabled="true" android:visible="true"/>
+            <item android:id="@+id/viewevent" android:visible="true" android:enabled="true" android:title="@string/ViewEvent"/>
         </menu>
     </item>
     
