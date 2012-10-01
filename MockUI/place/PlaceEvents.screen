@@ -18,10 +18,13 @@
     <screen xsi:type="model:WidgetGroup" href="../assets/android/Android4.screen#List%203%20Lines"/>
     <overrides>
       <widgets ref="470" x="2" width="61" text="2 Events"/>
-      <widgets ref="471" width="353" text="Event 1 Start Time - End Time\n%(font:15)Event 1 Summary%&#xA;Event 2 Start Time - End Time\n%(font:15)Event 1 Summary%">
-        <attributes key="selection" value="0"/>
-        <items ref="@items.1" text="Event 1 Start Time - End Time\n%(font:15)Event 1 Summary%" link="EventDetails.screen"/>
-        <items ref="@items.2" text="Event 2 Start Time - End Time\n%(font:15)Event 1 Summary%"/>
+      <widgets ref="471" width="353" text="Starts 9:00 am\n%(font:15)Ends 4 pm%\n%(font:15)Hackers Hack, bring your ax or Laptop%&#xA;Starts 3:00 pm\n%(font:15)Ends 4 pm%\n%(font:15)Demo Time%&#xA;">
+        <attributes key="selection" value=""/>
+        <items ref="@items.2" text="Starts 9:00 am\n%(font:15)Ends 4 pm%\n%(font:15)Hackers Hack, bring your ax or Laptop%" link="EventDetails.screen"/>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="Starts 3:00 pm\n%(font:15)Ends 4 pm%\n%(font:15)Demo Time%"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Delete" ref="@items.1"/>
         <itemChanges xsi:type="o:Delete" ref="@items.0"/>
       </widgets>
       <widgets ref="472" width="353"/>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
   <widgets xsi:type="model:Master" id="3" measuredWidth="430" measuredHeight="844">
     <screen xsi:type="model:Screen" href="../assets/BaseSubTemplate.screen#/"/>
+    <overrides>
+      <widgets ref="6" link="PlaceDetails.screen"/>
+    </overrides>
   </widgets>
   <widgets xsi:type="model:Master" id="5" x="37" y="180" measuredWidth="360" measuredHeight="526">
     <screen xsi:type="model:Screen" href="../assets/PlaceListing.screen#/"/>
@@ -9,6 +12,24 @@
       <widgets ref="1">
         <attributes key="selection" value="1"/>
       </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="6" x="38" y="230" measuredWidth="353" measuredHeight="187">
+    <screen xsi:type="model:WidgetGroup" href="../assets/android/Android4.screen#List%203%20Lines"/>
+    <overrides>
+      <widgets ref="470" x="2" width="121" text="20 Reviews"/>
+      <widgets ref="471" width="353" text="John\n%(font:15)4.2%\n%(font:15)Just went inside to have at ...%&#xA;Jane\n%(font:15)2.2%\n%(font:15)We are doooomed! ...%&#xA;">
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="Jane\n%(font:15)2.2%\n%(font:15)We are doooomed! ...%"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Insert" newIndex="3">
+          <object xsi:type="model:Item" text="John\n%(font:15)4.2%\n%(font:15)Just went inside to have at ...%"/>
+        </itemChanges>
+        <itemChanges xsi:type="o:Delete" ref="@items.2"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.1"/>
+        <itemChanges xsi:type="o:Delete" ref="@items.0"/>
+      </widgets>
+      <widgets ref="472" width="353"/>
     </overrides>
   </widgets>
   <hRuler/>

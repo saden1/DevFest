@@ -16,7 +16,7 @@
     <screen href="place/EventDetails.screen#/"/>
   </panels>
   <panels x="675" y="375">
-    <screen href="place/actions/EventAction.screen#/"/>
+    <screen href="place/actions/PlaceBumpAction.screen#/"/>
   </panels>
   <panels x="375" y="375">
     <screen href="place/PlaceDetails.screen#/"/>

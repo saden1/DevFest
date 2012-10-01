@@ -3,15 +3,15 @@
   <widgets xsi:type="model:Master" id="45" measuredWidth="430" measuredHeight="844">
     <screen xsi:type="model:Screen" href="assets/BaseTemplate.screen#/"/>
   </widgets>
-  <widgets xsi:type="model:Master" id="46" x="37" y="214" measuredWidth="360" measuredHeight="220">
+  <widgets xsi:type="model:Master" id="46" x="37" y="214" measuredWidth="360" measuredHeight="229">
     <screen xsi:type="model:WidgetGroup" href="assets/android/Android4.screen#List%202%20Lines"/>
     <overrides>
-      <widgets ref="466" text="10 Parks Nearby"/>
-      <widgets ref="467" text="Place 1 Name\n%(font:15)Place Description%&#xA;Place 2 Name\n%(font:15)Place Description%&#xA;Place 3 Name\n%(font:15)Place Description%">
-        <attributes key="selection" value="0"/>
-        <items ref="@items.0" text="Place 1 Name\n%(font:15)Place Description%" link="place/PlaceEvents.screen"/>
-        <items ref="@items.1" text="Place 2 Name\n%(font:15)Place Description%"/>
-        <items ref="@items.2" text="Place 3 Name\n%(font:15)Place Description%"/>
+      <widgets ref="466" text="2 Businesses Nearby"/>
+      <widgets ref="467" text="Surf Incubator\n%(font:15)10 Reviews%\n%(font:15)2 Events%&#xA;Some Other Place\n%(font:15)2 Reviews%\n%(font:15)0 Events%&#xA;Some Other Place\n%(font:15)4 Reviews%\n%(font:15)1Events%">
+        <attributes key="selection" value=""/>
+        <items ref="@items.0" text="Surf Incubator\n%(font:15)10 Reviews%\n%(font:15)2 Events%" link="place/PlaceDetails.screen"/>
+        <items ref="@items.1" text="Some Other Place\n%(font:15)2 Reviews%\n%(font:15)0 Events%"/>
+        <items ref="@items.2" text="Some Other Place\n%(font:15)4 Reviews%\n%(font:15)1Events%"/>
       </widgets>
     </overrides>
   </widgets>
